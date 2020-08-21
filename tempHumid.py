@@ -12,6 +12,12 @@ class Humidity:
     def getReading(self):
         self.humidity = self.hdc1000.readHumidity()
 
+    def heaterOn(self):
+        self.hdc1000.turnHeaterOn()
+
+    def heaterOff(self);
+        self.hdc1000.turnHeaterOff()
+
 class Temperature:
     def __init__(self):
         self.hdc1000 = SDL_Pi_HDC1000.SDL_Pi_HDC1000()
